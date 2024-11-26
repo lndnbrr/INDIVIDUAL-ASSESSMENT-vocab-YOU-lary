@@ -54,6 +54,7 @@ Create issue tickets from the items below to help you get started.
   - [ ] Create Entry
   - [ ] Any other options you would like to add
 
+# MVP User Requirements
 **The most basic requirement for this project is that a user can:**
 - [ ] Login and Logout of the application using Firebase Google Authentication
 - [ ] only see the vocabulary entries that they created
