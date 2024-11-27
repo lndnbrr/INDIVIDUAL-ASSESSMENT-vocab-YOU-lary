@@ -4,7 +4,42 @@
 
 body {
   background-color: antiquewhite;
-  color: brown;
-  text-align: center;
+}
+
+#login-button-container{
+  display: flex;
+  justify-content: center;
+}
+
+#google-auth-login{
   margin-top: 100px;
+  width: 400px;
+  height: 100px;
+  font-size: x-large;
+}
+
+
+#navBarBody{
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+#content-left{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#logo{
+  margin: 0px 20px 0px 20px;
+}
+
+#google-auth-logout{
+  margin-right: 20px;
 }
