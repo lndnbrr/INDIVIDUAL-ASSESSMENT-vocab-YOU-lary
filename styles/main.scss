@@ -43,3 +43,94 @@ body {
 #google-auth-logout{
   margin-right: 20px;
 }
+
+#filterButtonsOnDOM{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.filter{
+  margin: 0px 50px 0px 50px;
+  width: 150px;
+  font-size: xx-large;
+}
+
+#mainContainer{
+  margin-top: 50px;
+}
+
+#vocabTermsContent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#vocabCardBody {
+  margin: 10px;
+  width: 30%;
+  min-width: 340px;
+}
+
+#vocabCardTitle{
+  font-weight: bolder;
+  font-size:x-large;
+  margin-left: 3px;
+}
+
+#vocabCardLanguage {
+  font-size: larger;
+  margin-left: 3px;
+}
+
+
+#vocabCardDefinition {
+  margin-left: 3px;
+}
+
+#vocabCardButtons {
+display: flex;
+flex-direction: row;
+}
+
+#vocabCardEdit {
+  margin: 5px;
+}
+
+#vocabCardDelete {
+  margin: 5px;
+}
+
+#vocabTermsCreateForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  height: 200px;
+  width: 50%;
+}
+
+#termTitle{
+  min-width: 100%;
+}
+
+#languageType{
+  min-width: 100%;
+}
+
+#termDefinition{
+  min-width: 100%;
+}
+
+#submit{
+  margin-top: 5px;
+}
+
+
+#language_id{
+  border-color: black;
+}

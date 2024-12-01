@@ -1,0 +1,93 @@
+{
+  "-OCf9fckiTInlsHMkXdq": {
+    "firebaseKey": "-OCf9fckiTInlsHMkXdq",
+    "languageId": "-OCf7EhjmxM14zMVObky",
+    "uid": "",
+    "vocabDef": "A division or a section in an HTML document",
+    "vocabName": "<div>"
+  },
+  "-OCfAWIX1sUCb91tgAsy": {
+    "firebaseKey": "-OCfAWIX1sUCb91tgAsy",
+    "languageId": "-OCf7EhjmxM14zMVObky",
+    "uid": "",
+    "vocabDef": "Defines a paragraph.",
+    "vocabName": "<p>"
+  },
+  "-OCfAmNg2UlDu8mLtjUF": {
+    "firebaseKey": "-OCfAmNg2UlDu8mLtjUF",
+    "languageId": "-OCf7EhjmxM14zMVObky",
+    "uid": "",
+    "vocabDef": "represents a container for introductory content or a set of navigational links.",
+    "vocabName": "<header>"
+  },
+  "-OCfB1wrYMz9lvc9mrM8": {
+    "firebaseKey": "-OCfB1wrYMz9lvc9mrM8",
+    "languageId": "-OCf7EhjmxM14zMVObky",
+    "uid": "",
+    "vocabDef": "defines a footer for a document or section.",
+    "vocabName": "<footer>"
+  },
+  "-OCfBEYvt6FQpwXFF86B": {
+    "firebaseKey": "-OCfBEYvt6FQpwXFF86B",
+    "languageId": "-OCf7EhjmxM14zMVObky",
+    "uid": "",
+    "vocabDef": "defines a clickable button.",
+    "vocabName": "<button>"
+  },
+  "-OCfDsnk-KMOqcWsH5IG": {
+    "firebaseKey": "-OCfDsnk-KMOqcWsH5IG",
+    "languageId": "-OCf7LQuALUNlLSkvtb8",
+    "uid": "",
+    "vocabDef": "sets the foreground color value of an element's text and text decorations, and sets the currentcolor value.",
+    "vocabName": "color"
+  },
+  "-OCfEFJGNk2FQXI4EIP5": {
+    "firebaseKey": "-OCfEFJGNk2FQXI4EIP5",
+    "languageId": "-OCf7LQuALUNlLSkvtb8",
+    "uid": "",
+    "vocabDef": " defines the maximum width of an element.",
+    "vocabName": "max-width"
+  },
+  "-OCfEKTil1qLI-OEu8Ge": {
+    "firebaseKey": "-OCfEKTil1qLI-OEu8Ge",
+    "languageId": "-OCf7LQuALUNlLSkvtb8",
+    "uid": "",
+    "vocabDef": " allow you to specify the style, width, and color of an element's border.",
+    "vocabName": "border"
+  },
+  "-OCfERvX1UdywaIPafh_": {
+    "firebaseKey": "-OCfERvX1UdywaIPafh_",
+    "languageId": "-OCf7LQuALUNlLSkvtb8",
+    "uid": "",
+    "vocabDef": " the space between an element's border and the element's content.",
+    "vocabName": "padding"
+  },
+  "-OCfF3x0svMjlZsmMQvc": {
+    "firebaseKey": "-OCfF3x0svMjlZsmMQvc",
+    "languageId": "-OCf7Mva2O6Ixqi-VLgO",
+    "uid": "",
+    "vocabDef": " container for storing data",
+    "vocabName": "variable"
+  },
+  "-OCfFHp4gYDtg2ywgNIq": {
+    "firebaseKey": "-OCfFHp4gYDtg2ywgNIq",
+    "languageId": "-OCf7Mva2O6Ixqi-VLgO",
+    "uid": "",
+    "vocabDef": " a primitive data type used to represent textual data.",
+    "vocabName": "string"
+  },
+  "-OCfFOZyjDyotqcl7A6i": {
+    "firebaseKey": "-OCfFOZyjDyotqcl7A6i",
+    "languageId": "-OCf7Mva2O6Ixqi-VLgO",
+    "uid": "",
+    "vocabDef": " a data type that can have one of two values: true or false.",
+    "vocabName": "boolean"
+  },
+  "-OCfFVjzHU92oVGzAT62": {
+    "firebaseKey": "-OCfFVjzHU92oVGzAT62",
+    "languageId": "-OCf7Mva2O6Ixqi-VLgO",
+    "uid": "",
+    "vocabDef": " a data structure used to store a collection of values.",
+    "vocabName": "array"
+  }
+}
