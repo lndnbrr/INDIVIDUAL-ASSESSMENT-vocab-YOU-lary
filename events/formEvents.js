@@ -9,7 +9,7 @@ const formEvents = () => {
       const payload = {
         vocabName: document.querySelector('#termTitle').value,
         vocabDef: document.querySelector('#termDefinition').value,
-        languageId: document.querySelector('#select-language').value,
+        languageId: document.querySelector('#language_id').value,
         uid: ''
       };
 
@@ -27,7 +27,7 @@ const formEvents = () => {
       const payload = {
         vocabName: document.querySelector('#termTitle').value,
         vocabDef: document.querySelector('#termDefinition').value,
-        languageId: document.querySelector('#select-language').value,
+        languageId: document.querySelector('#language_id').value,
         uid: '',
         firebaseKey,
       };
