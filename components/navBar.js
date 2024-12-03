@@ -7,7 +7,7 @@ const navBar = () => {
   <div id="logo">logo here
   </div>
   <div id="createButton">
-  <a class= "nav-link" href="#"> Create a Term</a>
+  <a class= "nav-link" href="#" id="createNewTerm"> Create a Term</a>
   </div>
   </div>
   <div id="logoutButton"></div>
