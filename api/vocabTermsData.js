@@ -2,8 +2,8 @@ import client from '../utils/client';
 
 const endpoint = client.databaseURL;
 
-const getVocabTerms = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocabTerms.json`, {
+const getVocabTerms = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabTerms.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -14,39 +14,48 @@ const getVocabTerms = () => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-const filterByHtml = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocabTerms.json?orderBy="languageId"&equalTo="HTML"`, {
+const filterByHtml = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabTerms.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
     },
   })
     .then((response) => response.json())
-    .then((data) => resolve(Object.values(data)))
+    .then((data) => {
+      const htmlFilter = Object.values(data).filter((term) => term.languageId === 'HTML');
+      resolve(htmlFilter);
+    })
     .catch(reject);
 });
 
-const filterByCss = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocabTerms.json?orderBy="languageId"&equalTo="CSS"`, {
+const filterByCss = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabTerms.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
     },
   })
     .then((response) => response.json())
-    .then((data) => resolve(Object.values(data)))
+    .then((data) => {
+      const cssFilter = Object.values(data).filter((term) => term.languageId === 'CSS');
+      resolve(cssFilter);
+    })
     .catch(reject);
 });
 
-const filterByJs = () => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocabTerms.json?orderBy="languageId"&equalTo="JavaScript"`, {
+const filterByJs = (uid) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabTerms.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
     },
   })
     .then((response) => response.json())
-    .then((data) => resolve(Object.values(data)))
+    .then((data) => {
+      const jsFilter = Object.values(data).filter((term) => term.languageId === 'JavaScript');
+      resolve(jsFilter);
+    })
     .catch(reject);
 });
 
