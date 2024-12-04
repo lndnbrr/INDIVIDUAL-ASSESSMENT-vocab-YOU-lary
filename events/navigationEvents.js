@@ -3,25 +3,25 @@ import {
 } from '../api/vocabTermsData';
 import showVocabTerms from '../pages/vocabTerms';
 
-const navigationEvents = () => {
+const navigationEvents = (user) => {
   document.querySelector('#allLanguagesButton').addEventListener('click', () => {
     console.warn('all clicked');
-    getVocabTerms().then(showVocabTerms);
+    getVocabTerms(user.uid).then(showVocabTerms);
   });
 
   document.querySelector('#cssLanguagesButton').addEventListener('click', () => {
     console.warn('css clicked');
-    filterByCss().then(showVocabTerms);
+    filterByCss(user.uid).then(showVocabTerms);
   });
 
   document.querySelector('#htmlLanguagesButton').addEventListener('click', () => {
     console.warn('html clicked');
-    filterByHtml().then(showVocabTerms);
+    filterByHtml(user.uid).then(showVocabTerms);
   });
 
   document.querySelector('#jsLanguagesButton').addEventListener('click', () => {
     console.warn('js clicked');
-    filterByJs().then(showVocabTerms);
+    filterByJs(user.uid).then(showVocabTerms);
   });
 };
 

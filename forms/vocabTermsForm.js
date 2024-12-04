@@ -2,7 +2,7 @@ import renderToDOM from '../utils/renderToDom';
 import selectLanguageForm from './selectLanguageForm';
 import clearDom from '../utils/clearDom';
 
-const form = (obj = {}) => {
+const form = (user, obj = {}) => {
   clearDom();
 
   const domString = `
@@ -28,7 +28,7 @@ const form = (obj = {}) => {
     </form>`;
 
   renderToDOM('#vocabTermsCreateForm', domString);
-  selectLanguageForm(`${obj.languageId || ''}`);
+  selectLanguageForm(`${obj.languageId || ''}`, user.uid);
 };
 
 export default form;

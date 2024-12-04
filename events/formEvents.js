@@ -1,7 +1,7 @@
 import { getVocabTerms, updateTerm, createTerm } from '../api/vocabTermsData';
 import showVocabTerms from '../pages/vocabTerms';
 
-const formEvents = () => {
+const formEvents = (user) => {
   document.querySelector('#vocabTermsCreateForm').addEventListener('submit', (e) => {
     e.preventDefault();
     if (e.target.id.includes('submitNewTerm')) {
@@ -10,14 +10,14 @@ const formEvents = () => {
         vocabName: document.querySelector('#termTitle').value,
         vocabDef: document.querySelector('#termDefinition').value,
         languageId: document.querySelector('#language_id').value,
-        uid: ''
+        uid: user.uid
       };
 
       createTerm(payload).then(({ name }) => {
         const patchPayload = { firebaseKey: name };
 
         updateTerm(patchPayload).then(() => {
-          getVocabTerms().then(showVocabTerms);
+          getVocabTerms(user.uid).then(showVocabTerms);
         });
       });
     }
@@ -28,12 +28,11 @@ const formEvents = () => {
         vocabName: document.querySelector('#termTitle').value,
         vocabDef: document.querySelector('#termDefinition').value,
         languageId: document.querySelector('#language_id').value,
-        uid: '',
         firebaseKey,
       };
 
       updateTerm(payload).then(() => {
-        getVocabTerms().then(showVocabTerms);
+        getVocabTerms(user.uid).then(showVocabTerms);
       });
     }
   });
